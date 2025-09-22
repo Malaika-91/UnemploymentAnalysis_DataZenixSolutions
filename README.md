@@ -1,115 +1,97 @@
 # UnemploymentAnalysis_DataZenixSolutions
-# 📊 Unemployment Analysis Project
+📊 Unemployment Analysis During COVID-19
+📌 Project Overview
 
-This repository contains a data analysis project focused on **Unemployment Trends and Economic Indicators** across different time periods — before, during, and after COVID-19. The project leverages **Python, Pandas, Matplotlib, and Seaborn** for exploratory data analysis (EDA) and visualization.
+This project analyzes Unemployment trends before, during, and after COVID-19 using Python. The dataset includes Unemployment Rate (%), GDP Growth Rate (%), and other economic indicators across different years. By categorizing time into three phases (Before, During, and After COVID-19), we explore how the pandemic affected global employment and economic growth.
 
----
+⚙️ Technologies Used
 
-## 🚀 Features
+Python
 
-* Import, clean, and explore unemployment datasets
-* Handle missing and duplicate values
-* Categorize data into **Before COVID-19**, **During COVID-19**, and **After COVID-19**
-* Perform statistical summaries and group-wise comparisons
-* Generate insightful visualizations:
+Pandas → Data handling & cleaning
 
-  * Line plots showing unemployment rate over time
-  * Bar plots comparing unemployment and GDP growth rate
-  * Boxplots to analyze unemployment distribution across periods
-  * Heatmaps for correlation analysis
-* Structured codebase with scripts and optional Jupyter notebook
+Matplotlib → Data visualization
 
----
+Seaborn → Advanced plotting & styling
 
+📂 Dataset
 
+File: Unemployement.csv
 
----
+Columns include (example):
 
-## ⚙️ Installation & Setup
+Year
 
-### 1. Clone the repository
+Unemployment Rate (%)
 
-```bash
-git clone https://github.com/<your-username>/Unemployment-Analysis-Repo.git
-cd Unemployment-Analysis-Repo
-```
+GDP Growth Rate (%)
 
-### 2. Create a virtual environment
+(Other economic indicators)
 
-```bash
-python -m venv venv
-# Windows
-env\\Scripts\\activate
-# macOS / Linux
-source venv/bin/activate
-```
+🔑 Key Features
 
-### 3. Install dependencies
+Data Exploration (EDA):
 
-```bash
-pip install -r requirements.txt
-```
+Dataset info, missing values, duplicates, summary statistics.
 
-### 4. Add dataset
+Categorization:
 
-Place your CSV file (`Unemployement.csv`) inside the `data/` folder.
+Divides timeline into:
 
-### 5. Run the script
+Before COVID-19 (Years < 2020)
 
-```bash
-python src/eda_unemployment.py
-```
+During COVID-19 (2020–2021)
 
-Or use Jupyter for interactive exploration:
+After COVID-19 (Years > 2021)
 
-```bash
-jupyter lab
-```
+Statistical Comparison:
 
----
+Calculates average indicators for each time phase.
 
-## 📈 Sample Visualizations
+Data Visualization:
 
-* **Unemployment Rate vs Time** (Line Chart)
-* **Unemployment vs GDP Growth Rate** (Bar Chart)
-* **Distribution of Unemployment by Period** (Boxplot)
-* **Correlation Heatmap** (Economic Indicators)
+📈 Line Plot: Unemployment rate vs. Time
 
----
+📊 Bar Plot: Unemployment vs. GDP Growth
 
-## 📊 Technologies Used
+📉 Comparison Bar Chart: Average indicators across phases
 
-* **Python** (>=3.9)
-* **Pandas** → Data manipulation
-* **Matplotlib** → Visualizations
-* **Seaborn** → Statistical plotting
-* **JupyterLab** (optional) → Interactive notebooks
+📦 Boxplot: Unemployment distribution by time
 
----
+🔥 Heatmap: Correlation between economic indicators
 
-## 🤝 Contribution
+📊 Sample Insights
 
-Contributions are welcome! Feel free to fork this repository, submit pull requests, or open issues for suggestions and improvements.
+Unemployment rates spiked during COVID-19.
 
-Steps to contribute:
+GDP growth rate showed negative correlation with unemployment.
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Post-COVID recovery shows improving trends but varies across indicators.
 
----
+▶️ How to Run
+
+Clone this repository:
+
+git clone https://github.com/yourusername/unemployment-analysis.git
 
 
+Install dependencies:
 
----
-
-## 🙌 Acknowledgments
-
-* Inspired by real-world unemployment and GDP datasets
-* Python and open-source community for tools and libraries
-
----
+pip install pandas matplotlib seaborn
 
 
+Run the script:
+
+python unemployment_analysis.py
+
+📌 Visualizations (Examples)
+
+✅ Unemployment trends over time
+
+✅ Unemployment vs. GDP Growth
+
+✅ Correlation Heatmap
+
+📜 Conclusion
+
+This analysis highlights how COVID-19 significantly impacted unemployment rates worldwide, with economic recovery visible in post-2021 data. The project demonstrates data-driven insights using Python visualization tools.
